@@ -18,16 +18,12 @@ for i in jsonData['data']:
   fullString += splitedString[1]
 print('Create full string - Success\n')
 
-totalzeroes = fullString.count('0')
-totalones = fullString.count('1')
+data = { 
+  "data": fullString,
+}
+fullStringJson = './fullstring.json'; 
+with open(fullStringJson, 'w') as outfile:
+  json.dump(data, outfile, indent=4)
 
-sumTotals = totalzeroes + totalones
-zeroesPercent = totalzeroes * 100 / sumTotals
-onesPercent = totalones * 100 / sumTotals
+print('Save JSON of all Binary data - Success\n')
 
-print('Total of 0s: ', totalzeroes)
-print('Percentage of 0 present in string:', zeroesPercent, ' \n')
-print('Total of 1s: ', totalones)
-print('Percentage of 1 present in string: ', onesPercent)
-
-print('#################################\n')

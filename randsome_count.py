@@ -1,5 +1,4 @@
 import json
-
 def count_items():
   # handle file
   get_file = open('./full_string_production.json',) 
@@ -17,7 +16,6 @@ def count_items():
   print('Total of 1s: ', ones)
   print('Percentage of 0s present in string: ', zeroes_percent, ' \n')
   print('Percentage of 1s present in string: ', ones_percent)
-
 # __name__ will make the whole scope below imune 
 # from being imported by other modules
 if __name__ == '__main__':

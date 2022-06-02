@@ -1,5 +1,4 @@
 import json
-
 # returns the full string from anu response
 def get_full_string(index):
   # basic file handling
@@ -14,7 +13,6 @@ def get_full_string(index):
     full_string += splited_string[1]
   # send it!
   return full_string
-
 # __name__ will make the whole scope below imune 
 # from being imported by other modules
 if __name__ == '__main__':
@@ -33,6 +31,5 @@ if __name__ == '__main__':
   with open(full_file_json, 'w') as outfile:
     # as json, use 'ident' to make '4' tab spaces
     json.dump(data_dump, outfile, indent=4)
-
   # it worked?
   print('it worked?')

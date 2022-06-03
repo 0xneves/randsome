@@ -18,3 +18,7 @@ Will return true random integer or true random choices based on population
 
 randsome_enlarge.py
 Will use randsome.py to randomly inject '0' or '1' into the a new string that will have the same amount of '0's and '1's
+
+References
+https://quantumnumbers.anu.edu.au/
+https://arxiv.org/pdf/1604.03304.pdf

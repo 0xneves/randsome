@@ -1,3 +1,5 @@
+Will use ANU API requests to compose a block of true random numbers, this block can them be consumed to generate more random results
+
 With pip and python already installed
 
 pip install python-dotenv
